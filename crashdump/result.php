@@ -270,7 +270,7 @@ ob_start();
 		</tbody>
 	</table>
 </div>
-
+<?php readfile("../ad.txt");?>
 <div class="datum" data-name="入れていたプラグイン">
 	<div class="spoiling" data-spoiler-name="<?= count($data["plugins"]) ?> plugins">
 		<ul>
@@ -360,7 +360,7 @@ ob_start();
 		</table>
 	</div>
 </div>
-
+<?php readfile("../ad.txt");?>
 </body>
 </html>
 <?php

@@ -21,7 +21,7 @@ textdomain(PACKAGE);
 <p><?php echo _('送信方法を選択してください。'); ?></p>
 <hr>
 <form action="result.php" method="post" enctype="multipart/form-data">
-	<input type="radio" name="method" value="buffer" checked> <?php echo _('Paste crash dump'); ?>
+	<input type="radio" name="method" value="buffer" checked> <?php echo _('クラッシュダンプをコピペしてください'); ?>
 	<br>
 	<pre>----------------------<?php echo _('レポートデータを下に入力してください'); ?>-----------------------
 ===<?php echo _('BEGIN CRASH DUMP'); ?>===
@@ -35,6 +35,7 @@ textdomain(PACKAGE);
 	<input type="submit">
 	<input type="checkbox" name="api"> <?php echo _('JSONとして出力'); ?>
 </form>
+<?php readfile("../ad.txt");?>
 </body>
 </html>
 
