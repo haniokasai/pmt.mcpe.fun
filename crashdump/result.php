@@ -44,7 +44,7 @@ $data = json_decode($json, true);
 if(!is_array($data)){
 	http_response_code(400);
 	header("Content-Type: text/plain");
-	echo "Data error!";
+	echo "データエラー!";
 	die;
 }
 
@@ -185,14 +185,14 @@ ob_start();
 <body>
 <h1>Crash dump</h1>
 
-<div class="datum" data-name="Date of Crash">
+<div class="datum" data-name="クラッシュした日">
 	<script>
 		var date = new Date(<?= json_encode($data["time"]) * 1000 ?>);
 		document.write(date.toDateString());
 	</script>
 </div>
 
-<div class="datum" data-name="Error">
+<div class="datum" data-name="エラー">
 	<pre class="code" data-hide-line-number>
 <?= htmlspecialchars($data["error"]["type"]) ?> - <?= htmlspecialchars($data["error"]["message"]) ?>
 	</pre>
@@ -205,7 +205,7 @@ ob_start();
 	}
 	$errorLine = $data["error"]["line"];
 	?>
-	<div class="spoiling" data-spoiler-name="error code">
+	<div class="spoiling" data-spoiler-name="エラーコード">
 		<pre class="code" data-first-line="<?= array_keys($data["code"])[0] ?>" data-highlight-line="<?= $errorLine ?>">
 			<?= str_replace(["\t", " "], ["&nbsp;&nbsp;&nbsp;&nbsp;", "&nbsp;"], implode("\n", $data["code"])) ?>
 		</pre>
@@ -213,7 +213,7 @@ ob_start();
 </div>
 
 <?php if(isset($data["plugin"]) and isset($data["plugins"][$data["plugin"]])): ?>
-	<div class="datum" data-name="Crashing plugin">
+	<div class="datum" data-name="クラッシュした原因のプラグイン">
 		<?php
 		$plugin = $data["plugins"][$data["plugin"]];
 		if($plugin["website"] !== null){
@@ -243,14 +243,14 @@ ob_start();
 	</div>
 </div>
 
-<div class="datum" data-name="PocketMine Information">
+<div class="datum" data-name="PocketMine情報">
 	<table class="info">
 		<?php
 		$generalInfo = $data["general"];
 		?>
 		<tbody>
 		<tr>
-			<th>Version</th>
+			<th>バージョン</th>
 			<td><?= $generalInfo["version"] ?></td>
 		</tr>
 		<tr>
@@ -264,14 +264,14 @@ ob_start();
 			</tr>
 		<?php endif; ?>
 		<tr>
-			<th>RakLib version</th>
+			<th>RakLibバージョン</th>
 			<td><?= $generalInfo["raklib"] ?></td>
 		</tr>
 		</tbody>
 	</table>
 </div>
 
-<div class="datum" data-name="Plugins">
+<div class="datum" data-name="入れていたプラグイン">
 	<div class="spoiling" data-spoiler-name="<?= count($data["plugins"]) ?> plugins">
 		<ul>
 			<?php foreach($data["plugins"] as $plugin): ?>
@@ -286,37 +286,37 @@ ob_start();
 						<table class="info">
 							<tbody>
 							<tr>
-								<th>Version</th>
+								<th>バージョン</th>
 								<td><?= htmlspecialchars($plugin["version"]) ?></td>
 							</tr>
 							<tr>
-								<th>Author(s)</th>
+								<th>作者</th>
 								<td><?= formatArray($plugin["authors"]) ?></td>
 							</tr>
 							<tr>
-								<th>Supported API(s)</th>
+								<th>対応API</th>
 								<td><?= formatArray($plugin["api"]) ?></td>
 							</tr>
 							<?php if(count($plugin["depends"]) > 0): ?>
 								<tr>
-									<th>Dependencies</th>
+									<th>依存関係</th>
 									<td><?= formatArray($plugin["depends"]) ?></td>
 								</tr>
 							<?php endif; ?>
 							<?php if(count($plugin["softDepends"]) > 0): ?>
 								<tr>
-									<th>Soft Dependencies</th>
+									<th>緩やかな依存関係</th>
 									<td><?= formatArray($plugin["softDepends"]) ?></td>
 								</tr>
 							<?php endif; ?>
 							<?php if($plugin["website"] !== null): $website = $plugin["website"]; ?>
 								<tr>
-									<th>Website</th>
+									<th>作者のサイト</th>
 									<td><?= formatUrl($website) ?></td>
 								</tr>
 							<?php endif; ?>
 							<tr>
-								<th>Main class</th>
+								<th>メインクラス</th>
 								<td><?= htmlspecialchars($plugin["main"]) ?></td>
 							</tr>
 							</tbody>
@@ -328,7 +328,7 @@ ob_start();
 	</div>
 </div>
 
-<div class="datum" data-name="PocketMine configuration files">
+<div class="datum" data-name="PocketMine設定ファイル">
 	<div class="spoiling" data-spoiler-name="server.properties">
 		<pre class="code">
 			<?= htmlspecialchars($data["server.properties"]) ?>
@@ -341,7 +341,7 @@ ob_start();
 	</div>
 </div>
 
-<div class="datum" data-name="PHP information">
+<div class="datum" data-name="PHP情報">
 	<div class="spoiling" data-spoiler-name="PHP extensions">
 		<table class="info">
 			<tbody>

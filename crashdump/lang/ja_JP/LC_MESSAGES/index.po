@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pmt.mcpe.me page Languages\n"
+"POT-Creation-Date: 2016-04-13 14:44+0800\n"
+"PO-Revision-Date: 2016-04-13 14:46+0800\n"
+"Last-Translator: haniokasai <htek@haniokasai.com>\n"
+"Language-Team: haniokasai <htek@haniokasai.com>\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: index.php\n"
+
+msgid "BEGIN CRASH DUMP"
+msgstr "BEGIN CRASH DUMP"
+
+msgid "END CRASH DUMP"
+msgstr "END CRASH DUMP"
+
+msgid "Paste crash dump"
+msgstr "クラッシュダンプをコピペしてください"
+
+msgid "Please choose a method to send the crash dump."
+msgstr "クラッシュダンプを送信する方法を決めてください"
+
+msgid "REPORT THE DATA BELOW THIS LINE"
+msgstr "下にクラッシュダンプのデータをいれること。"
+
+msgid "output as JSON"
+msgstr "JSONとして出力"
+
+msgid "{EXPERIMENTAL} GitHub link"
+msgstr "{試験的} GitHubリンク"
+
+msgid "{EXPERIMENTAL} Upload crash dump file"
+msgstr "{試験的}　クラッシュダンプのログファイルのアップロード"

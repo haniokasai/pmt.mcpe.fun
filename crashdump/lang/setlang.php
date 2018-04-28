@@ -4,7 +4,7 @@ $lang = $matches[1];// Take the first language settings
 $lang = strtolower($lang);// Converted to lowercase
 // default lang & type
 $lang = $lang;
-putenv('LANG=en_US');
+putenv('LANG=ja_JP');
 setlocale(LC_ALL, $lang);
 
 $lang = isset($_GET['lang']) ? $_GET['lang'] : $lang;
@@ -30,7 +30,11 @@ if ('en-us' == $lang) {
 } else if ('zh-sg' == $lang) {
     putenv('LANG=zh_CN');
     setlocale(LC_ALL, 'zh_CN'); // bsd use zh_CN.GBK
-	header('Content-type: text/html; charset=gbk');
+    header('Content-type: text/html; charset=gbk');
+}else if ('ja-jp' == $lang) {
+        putenv('LANG=ja_JP');
+        setlocale(LC_ALL, 'ja-JP'); // bsd use zh_CN.GBK
+        header('Content-type: text/html; charset=utf-8');
 }
 
 ?>
