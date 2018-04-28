@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="351af737-75bf-42d1-a2eb-242eca9c9bcd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crashdump/lang/ja_JP/LC_MESSAGES/index.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crashdump/lang/setlang.php" afterPath="$PROJECT_DIR$/crashdump/lang/setlang.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crashdump/result.php" afterPath="$PROJECT_DIR$/crashdump/result.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crashdump/index.php" afterPath="$PROJECT_DIR$/crashdump/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,8 +36,18 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crashdump/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            <state relative-caret-position="595">
+              <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.po" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crashdump/lang/ja_JP/LC_MESSAGES/index.po">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -91,6 +98,7 @@
         <option value="$PROJECT_DIR$/crashdump/lang/setlang.php" />
         <option value="$PROJECT_DIR$/crashdump/lang/en_US/LC_MESSAGES/index.po" />
         <option value="$PROJECT_DIR$/crashdump/result.php" />
+        <option value="$PROJECT_DIR$/crashdump/index.php" />
       </list>
     </option>
   </component>
@@ -285,12 +293,12 @@
       <updated>1493443283127</updated>
       <workItem from="1493443284524" duration="8341000" />
       <workItem from="1493545734127" duration="815000" />
-      <workItem from="1524923952805" duration="1940000" />
+      <workItem from="1524923952805" duration="2473000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11096000" />
+    <option name="totallyTimeSpent" value="11629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1296" height="1000" extended-state="0" />
@@ -698,14 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crashdump/lang/ja_JP/LC_MESSAGES/index.po">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crashdump/lang/ja_JP/LC_MESSAGES/index.mo">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -780,10 +780,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/crashdump/lang/ja_JP/LC_MESSAGES/index.po">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/crashdump/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        <state relative-caret-position="595">
+          <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
           <folding />
         </state>
       </provider>
